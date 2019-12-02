@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zsmypb.spb.login.mapper.LoginMapper">
+<mapper namespace="com.zsmypb.sbs.login.mapper.LoginMapper">
 
-    <select id="getHelloList" resultType="com.zsmypb.spb.hello.domain.Hello">
+    <select id="getHelloList" resultType="com.zsmypb.sbs.hello.domain.Hello">
         select id, hello, world  from spb_hello;
     </select>
 
-    <select id="getUserByName" parameterType="java.lang.String" resultType="com.zsmypb.spb.login.domain.User">
+    <select id="getUserByName" parameterType="java.lang.String" resultType="com.zsmypb.sbs.login.domain.User">
       select userId, username, password from ssm_user where username = #{name};
     </select>
     <!--<insert id="addUserInfo" parameterType="com.zsmypb.zs.user.domain.User">-->

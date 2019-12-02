@@ -1,2 +1,2 @@
 # sbs-server
-sprngBoot shiro
+springBoot shiro
